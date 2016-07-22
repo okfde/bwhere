@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Bundeswhere: Heatmap</title>
+	<script src="assets/vendor/fetch.js"></script>
+	<script src="assets/vendor/leaflet/leaflet.js"></script>
+	<script src="assets/vendor/hmap.js/hmap.min.js"></script>
+	<script src="assets/vendor/hmap.js/leaflet-heatmap.js"></script>
+	<script src="assets/js/index.js"></script>
+	<link rel="stylesheet" href="assets/vendor/leaflet/leaflet.css">
+	<style>
+		body {
+			margin: 0;
+		}
+
+		.map {
+			width: 100vw;
+			height: 100vh;
+		}
+
+		.command {
+			background: #fff none repeat scroll 0 0;
+			color: #333;
+			padding: 6px 10px 6px 6px;
+			border-radius: 5px;
+			box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
+		}
+
+		.leaflet-popup-pane {
+			position: absolute;
+		}
+
+		.leaflet-popup-content {
+			overflow: auto;
+			max-width: 100%;
+		}
+
+		.leaflet-right div {
+			min-width: 100px;
+		}
+	</style>
+</head>
+<body>
+<div class="map"></div>
+</body>
+</html>
